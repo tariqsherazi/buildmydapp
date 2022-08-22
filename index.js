@@ -22,6 +22,7 @@ app.use('/api/v1/users',userRoutes);
 
 
 
-app.listen((process.env.PORTNO),()=>{
+const PORT = process.env.PORT || 5050;
+app.listen((PORT),()=>{
     console.log(`Server running with portNo of ${process.env.PORTNO}`.blue.underline)
 })

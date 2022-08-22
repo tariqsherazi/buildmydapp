@@ -84,3 +84,16 @@ exports.updateUser = asyncHandler(async (req, res) => {
     }
 })
 
+
+
+
+exports.getUser=asyncHandler(async(req,res)=>{
+    User.find({},(err,user)=>{
+        if(err){
+            return res.status(401).json({success:false,data:"some thing went wrong"})
+        }
+        return res.status(201).json({success:true,data:user})
+
+
+    })
+})
