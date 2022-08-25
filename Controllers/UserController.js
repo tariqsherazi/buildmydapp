@@ -97,3 +97,14 @@ exports.getUser=asyncHandler(async(req,res)=>{
 
     })
 })
+
+exports.getById=asyncHandler(async(req,res)=>{
+       const user=await User.findById(req.params.id);
+       if(user){
+        res.status(201).json({success:true,data:user})
+       }else{
+        res.status(404).json({success:true,data:"User Not found"})
+        
+
+       }
+})
