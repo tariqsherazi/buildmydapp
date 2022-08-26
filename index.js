@@ -4,6 +4,7 @@ const app=express();
 require('dotenv').config();
 const mongodb= require('./Config/DB')
 const cors=require('cors');
+const cloudinary = require("cloudinary");
 const morgan=require('morgan');
 const path=require('path');
 const helmet=require('helmet');
@@ -21,13 +22,17 @@ app.use(xss());
 app.use(helmet());
 app.use(express.json())
 app.use(cors());
-app.use(fileupload());
+app.use(fileupload({useTempFiles:true}));
 app.use(morgan('dev'));
 app.use('/api/v1/users',userRoutes);
 app.use('/api/v1/mobiles',mobileRoutes);
 
 
-
+cloudinary.config({ 
+    cloud_name: 'ddqmhn3sa', 
+    api_key: '768749173658598', 
+    api_secret: 'rbLCBj060oTkyN3S1COjUWPLaRc' 
+  });
 
 const PORT = process.env.PORT || 5050;
 app.listen((PORT),()=>{

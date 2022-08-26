@@ -14,15 +14,15 @@ const batterySchema=new mongoose.Schema({
        desc:{ type:String}
 },{ _id: false })
 const memorySchema=new mongoose.Schema({
-        ram:{ value:[Number],
+        ram:{ value:[String],
              unit: {
                 type: String,
-                required: [true, 'must end ram size']
+                
             }},
-        rom:{ value:[Number],
+        rom:{ value:[String],
             unit: {
                 type: String,
-                required: [true, 'must end ram size']
+                
             }},
 },{ _id: false })
 const reviewSchema = new mongoose.Schema({
@@ -49,6 +49,7 @@ const mobileSchema=new mongoose.Schema({
     build:buildSchema,
     memory:memorySchema,
     battery:batterySchema,
-    review:[reviewSchema]
+    review:[reviewSchema],
+    image:[String]
 })
 module.exports=mongoose.model("Mobile",mobileSchema);

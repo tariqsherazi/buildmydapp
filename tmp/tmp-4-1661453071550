@@ -1,0 +1,113 @@
+
+
+
+export const product=[
+    {
+     _id:1,
+      brandName:'Samsong',
+      model:'A71',
+      photos:'../Assests/mob1.webp',
+      star:'4.2',
+      price:8000,
+     countInStock:5,
+     ram:'8',
+     rom:'120'
+    
+    },
+    {
+     _id:2,
+      brandName:'Samsong',
+      model:'A71',
+      photos:'../Assests/mob2.jpeg',
+      star:'3',
+      price:8000,
+     countInStock:5,
+     ram:'8',
+     rom:'120'
+    
+    },
+    {
+     _id:3,
+      brandName:'Samsong',
+      model:'A71',
+      photos:'../Assests/mob1.webp',
+      start:'1',
+      price:8000,
+     countInStock:5,
+     ram:'8',
+     rom:'120'
+    
+    },
+    {
+     _id:4,
+      brandName:'Samsong',
+      model:'A71',
+      photos:'../Assests/mob5.webp',
+      star:'5',
+      price:8000,
+     countInStock:5,
+     ram:'8',
+     rom:'120'
+    
+    },
+    {
+     _id:5,
+      brandName:'Samsong',
+      model:'A71',
+      photos:'../Assests/mob3.webp',
+      star:'2',
+      price:8000,
+     countInStock:5,
+     ram:'8',
+     rom:'120'
+    
+    },
+    {
+     _id:6,
+      brandName:'Samsong',
+      model:'A71',
+      photos:'../Assests/mob4.webp',
+      star:'2',
+      price:8000,
+     countInStock:5,
+     ram:'8',
+     rom:'120'
+    
+    },
+    {
+        _id:7,
+         brandName:'Samsong',
+         model:'A71',
+         photos:'../Assests/mob1.webp',
+         star:'5',
+         price:8000,
+        countInStock:5,
+        ram:'8',
+        rom:'120gb'
+       
+       },
+       {
+        _id:8,
+         brandName:'Samsong',
+         model:'A71',
+         photos:'../Assests/mob1.webp',
+         star:'5',
+         price:8000,
+        countInStock:5,
+        ram:'8',
+        rom:'120gb'
+       
+       },
+       {
+        _id:9,
+         brandName:'Samsong',
+         model:'A71',
+         photos:'../Assests/mob1.webp',
+         star:'5',
+         price:8000,
+        countInStock:5,
+        ram:'8',
+        rom:'120gb'
+       
+       },
+    ]
